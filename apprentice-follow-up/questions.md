@@ -38,6 +38,9 @@ excersize 4 - strategically ordering the layers made a big difference - it reduc
 Security related problems - exposure of secure tokens. This may not be as important as we are using Github which prevents users from exposing personal access tokens when committing code, or deletes them then they have been committed. Despite this, this is not good practice, and as the client is the MOJ, we are working with sensative data.
 
 1. What problem have you spotted on your delivery that either needs improving or has been solved by one of these approaches? (or another approach we haven’t discussed)
-1. Give an example of a problem you spotted and the proposal you made for it to be fixed
+Images can take several minutes to build and often need rebuilding
+I have been advised to distory images at the end of the day as this ensures I have only the latest image available & frees up space in my machine 
+
+1. Give an example of a problem you spotted and the proposal you made for it to be fixed   
 2. Give an example of a problem you were involved in fixing and the impact that the fix brought. How was the impact measured?
 
