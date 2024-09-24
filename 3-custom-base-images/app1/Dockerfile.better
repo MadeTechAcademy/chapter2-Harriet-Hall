@@ -1,4 +1,4 @@
-FROM docker-deep-dive/ex3/better 
+FROM docker-deep-dive/ex3/app-base 
 # selectively copy the tests to the image's working directory
 COPY functional-tests/ /tests/
 COPY Rakefile /tests/
