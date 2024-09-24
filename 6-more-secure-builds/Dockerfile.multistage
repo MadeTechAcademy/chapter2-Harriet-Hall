@@ -15,7 +15,8 @@ RUN npm ci --omit=dev
 
 COPY . .
 
-FROM scratch
-COPY --from=build . .
+FROM node:${NODE_VERSION}-alpine
+WORKDIR /src
+COPY --from=build /usr/src/app .
 
 CMD node src/index.js
