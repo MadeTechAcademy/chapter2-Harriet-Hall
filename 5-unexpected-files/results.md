@@ -26,7 +26,6 @@ Better build file listing:
 
 /my-app
 ├── .dockerignore
-├── Dockerfile
 ├── Gemfile
 ├── Gemfile.lock
 ├── Rakefile
