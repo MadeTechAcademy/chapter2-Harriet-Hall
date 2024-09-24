@@ -4,3 +4,4 @@ app/
 .env
 .ruby-version 
 tests/
+Dockerfile
