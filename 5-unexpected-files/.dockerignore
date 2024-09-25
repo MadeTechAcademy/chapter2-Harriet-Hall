@@ -1,0 +1,7 @@
+results.md 
+readme.md
+app/
+.env
+.ruby-version 
+tests/
+Dockerfile
