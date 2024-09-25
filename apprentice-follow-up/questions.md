@@ -54,3 +54,7 @@ Resource Optimisation: I have been advised to destroy images at the end of the d
 On my project the Dockerfiles are not referenced in the .dockerignore files. This is something I queried with my team and suggested that maybe they should be as they reveal information about how our images are built. However, since sensitive information is not available in the dockerfiles and is instead stored in environment variables, and our repos are private, this is not required. According to various articles online, it seems that the decision of whether or not to put the Dockerfile in the .dockerignore is a matter of personal preference. Keeping it out may be favourable in certain circumstances when greater transparency is required, especially in open-source or shared projects.
  
 2. Give an example of a problem you were involved in fixing and the impact that the fix brought. How was the impact measured?
+
+Updating a Dockerfile in the core repo - By combining related files into fewer COPY commands, we reduced the number of Docker layers being built whcih subsequently reduced build times.
+This was measured by comparing the average time it took to rebuild images before and after applying these changes. 
+
